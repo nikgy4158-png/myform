@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    background-color: var(--background-color);
+}
+
+// Default Theme (dark
+$primary-color: #2b2d42;
+$secondary-color: #ffba2fd7;
+$accent-color: #ffb700;
+$text-color: #fff875;
+$div-color: #2f4858;
+$border-color: #1e8576;
+$shadow-color: rgba(0, 0, 0, 0.2);
+$background-color-seethrough: #2f485800;
+$text-color2: #c7c7c7;
+$background-color1: rgb(0, 6, 14);
+$nav-hover-color: #32355c;
+$submenu-background-color: #161b28;
+$plugin-description-color: #c4b690;
+$background-color-seethrough: rgba(0, 6, 14, 0.638);
+
+// Dark Theme
+$elegent-primary-color: #576f8c; 
+$elegent-secondary-color: #1C2541;
+ $elegent-accent-color: #c0a75b; 
+ $elegent-div-color: #0B132B; 
+ $elegent-text-color: #dac22c; 
+ $elegent-border-color: #2A3950; 
+ $elegent-shadow-color: rgba(0, 0, 0, 0.5); 
+ $elegent-background-color-seethrough: rgba(58, 80, 107, 0.2); 
+ $elegent-text-color2: #c8beae; 
+ $elegent-background-color: #1F2833; 
+ $elegent-nav-hover-color: #33526c; 
+ $elegent-submenu-background-color: #2C3E50; 
+ $elegent-plugin-description-color: #232322;
+ $elegent-background-color-seethrough: #1f283392;
+
+// Light Theme
+$light-primary-color: #f8d17d;
+$light-secondary-color: #E0E0E0;
+$light-accent-color: #4b91e2;
+$light-div-color: #F0F4F8;
+$light-text-color: #333333;
+$light-border-color: #4b91e2;
+$light-shadow-color: rgba(0, 0, 0, 0.1);
+$light-background-color-seethrough: rgba(107, 142, 164, 0.1);
+$light-text-color2: #134580;
+$light-background-color: #f0f0f0;
+$light-nav-hover-color: #e1cd5b;
+$light-submenu-background-color: #d1d9dd;
+$light-plugin-description-color: #565252;
+$light-background-color-seethrough: #f0f0f08f;
+
+// src/styles/themes.scss
+
+:root {
+    --primary-color: #{$primary-color};
+    --div-color: #{$div-color};
+    --text-color: #{$text-color};
+    --border-color: #{$border-color};
+    --shadow-color: #{$shadow-color};
+    --background-color-seethrough: #{$background-color-seethrough};
+    --text-color2: #{$text-color2};
+    --accent-color: #{$accent-color};
+    --secondary-color: #{$secondary-color};
+    --background-color1: #{$background-color1};
+    --nav-hover-color: #{$nav-hover-color};
+    --submenu-background-color: #{$submenu-background-color};
+    --plugin-description-color: #{$plugin-description-color};
+    --background-color-seethrough: #{$background-color-seethrough};
+  }
+  
+  .neutral {
+    --primary-color: #{$elegent-primary-color};
+    --div-color: #{$elegent-div-color};
+    --text-color: #{$elegent-text-color};
+    --border-color: #{$elegent-border-color};
+    --shadow-color: #{$elegent-shadow-color};
+    --background-color-seethrough: #{$elegent-background-color-seethrough};
+    --text-color2: #{$elegent-text-color2};
+    --accent-color: #{$elegent-accent-color};
+    --secondary-color: #{$elegent-secondary-color};
+    --background-color1: #{$elegent-background-color};
+    --nav-hover-color: #{$elegent-nav-hover-color};
+    --submenu-background-color: #{$elegent-submenu-background-color};
+    --plugin-description-color: #{$elegent-plugin-description-color};
+    --background-color-seethrough: #{$elegent-background-color-seethrough};
+  }
+  
+  .light-theme {
+    --primary-color: #{$light-primary-color};
+    --div-color: #{$light-div-color};
+    --text-color: #{$light-text-color};
+    --border-color: #{$light-border-color};
+    --shadow-color: #{$light-shadow-color};
+    --background-color-seethrough: #{$light-background-color-seethrough};
+    --text-color2: #{$light-text-color2};
+    --accent-color: #{$light-accent-color};
+    --secondary-color: #{$light-secondary-color};
+    --background-color1: #{$light-background-color};
+    --nav-hover-color: #{$light-nav-hover-color};
+    --submenu-background-color: #{$light-submenu-background-color};
+    --plugin-description-color: #{$light-plugin-description-color};
+    --background-color-seethrough: #{$light-background-color-seethrough};
+  }
+  // Other themes as you defined above... 

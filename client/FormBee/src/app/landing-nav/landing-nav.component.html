@@ -1,0 +1,23 @@
+<nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <img alt="FormBee Logo" (click)="goHome()" style="cursor: pointer;" src="../../assets/FormBee__1_-removebg.png"/>
+      </div>
+      <ul class="nav-links">
+        <li (click)="goToDocs()"><a>Docs</a></li>
+        <li (click)="pricingJump()"><a>Pricing</a></li>
+        <li><button (click)="signIn()" class="sign-in-btn">Sign In</button></li>
+      </ul>
+      <div class="hamburger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <ul class="mobile-menu" [class.open]="menuOpen">
+      <li (click)="goToDocs()"><a>Docs</a></li>
+      <li><a (click)="pricingJump()">Pricing</a></li>
+      <li><button class="sign-in-btn" (click)="signIn()">Sign In</button></li>
+    </ul>
+  </nav>
+  

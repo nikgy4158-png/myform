@@ -1,0 +1,222 @@
+
+.section-container {
+  h3 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 20vh;
+}
+.framework-tabs,
+  button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
+  }
+
+  ::-webkit-scrollbar {
+    border-radius: 20px;
+}
+.code-examples-container {
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 40vh;
+  background-color: #343434;
+  color: #000000;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-size: 1rem;
+
+  pre {
+    font-family: monospace;
+    margin: 0;
+    padding: 10px;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    // overflow-y: hidden;
+    scrollbar-width: 0px;
+  }
+
+  ::-webkit-scrollbar {
+    width:0px;
+  }
+}
+
+html, body {
+  background-color: #504538;
+}
+
+.framework-tabs {
+  width: fit-content;
+  padding: 5px;
+  margin:auto;
+  margin-bottom:10px;
+}
+
+
+.background-color {
+margin:0;
+padding:0;
+z-index: -1;
+background-image: linear-gradient(to bottom, #ffffff, #ffbd59);
+// border-radius: 10px;
+height:fit-content;
+width:100vw;
+height: fit-content;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+
+.fw-nav {
+  width: 100%;
+  height: 40px;
+  background-color: #343434;
+
+  z-index: 1000;
+  border-bottom: solid 1px #000000;
+  border-radius: 20px;
+}
+
+.copy-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #202020;
+  color: #ffbd59;
+}
+
+.copy-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.vanilla-button {
+  position: relative;
+  background: linear-gradient(to top right, #f0db4f, #ffec8b);
+  border: solid 1px #000000;
+  outline: none;
+  transition: opacity .4s ease-in-out;
+  transition: box-shadow .4s ease-in-out;
+  color: black;
+  box-shadow: rgba(#f0db4f, 0.4) -5px 5px, rgba(#f0db4f, 0.3) -10px 10px, rgba(#f0db4f, 0.2) -15px 15px, rgba(#f0db4f, 0.1) -20px 20px, rgba(#f0db4f, 0.05) -25px 25px;
+
+  border-radius: 20px;
+}
+.vanilla-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: rgba(#f0db4f, 0.3) -2px 2px;
+
+}
+
+.angular-button {
+  position: relative;
+  background: linear-gradient(to top right, #dd0031, #a60bcc8f);
+  border: solid 1px #000000;
+  outline: none;
+  transition: opacity .4s ease-in-out;
+  transition: box-shadow .4s ease-in-out;
+  color: black;
+  box-shadow: rgba(#dd0031, 0.4) 0px 5px, rgba(#dd0031, 0.3) 0px 10px, rgba(#dd0031, 0.2) 0px 15px, rgba(#dd0031, 0.1) 0px 20px, rgba(#dd0031, 0.05) 0px 25px; 
+
+  border-radius: 20px;
+}
+.angular-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: rgba(#dd0031, 0.3) 0px 2px;
+
+}
+
+.react-button {
+  position: relative;
+  background: linear-gradient(to top right, #43a0df, #43a0df);
+  border: solid 1px #000000;
+  outline: none;
+  transition: opacity .4s ease-in-out;
+  transition: box-shadow .4s ease-in-out;
+  color: black;
+  box-shadow: rgba(#43a0df, 0.4) 5px 5px, rgba(#43a0df, 0.3) 10px 10px, rgba(#43a0df, 0.2) 15px 15px, rgba(#43a0df, 0.1) 20px 20px, rgba(#43a0df, 0.05) 25px 25px; 
+  border-radius: 20px;
+}
+.react-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: rgba(#43a0df, 0.3) 2px 2px;
+}
+
+.file-button {
+  background-color: #343434;
+  border: none;
+  border-radius: 5px;
+  color: #ffbd59;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.file-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.file-tabs {
+  margin-left: 10px;
+}
+
+code {
+  text-shadow:none;
+}
+
+@media screen and (max-width: 768px) {
+  .code-examples-container {
+    width: 90vw;
+    margin: auto;
+  }
+
+  .section-container {
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+.underline {
+  background-color: #202020;
+}
+
+.copied {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffbd59;
+  font-size: 1.5rem;
+  z-index: 1000;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.copied.copy-fade {
+  opacity: 0;
+}

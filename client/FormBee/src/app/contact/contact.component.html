@@ -1,0 +1,37 @@
+@if (formComplete) {
+  <div class="form-complete">
+    <h2>Thank you for your message!</h2>
+    <p>We will get back to you as soon as possible.</p>
+  </div>
+}
+<app-landing-nav></app-landing-nav>
+<app-landing-three-bg style="position: absolute; z-index: -1;"></app-landing-three-bg>
+
+<div class="contact-container">
+  <h2>Question, comment, inquiry, or just want to say hi? Shoot us a message!</h2>
+  
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" name="email">
+    <p *ngIf="needEmail" class="error">Email is required</p>
+    <p *ngIf="needValidEmail" class="error">Email is invalid</p>
+    <label for="message">Message:</label>
+    <textarea id="message" formControlName="message" name="message" rows="7"></textarea>
+    <p *ngIf="needMessage" class="error">Message is required</p>
+    <input style="display: none;" id="honey" name="spot">
+
+    <altcha-widget
+      class="altcha"
+      challengeurl="https://api.formbee.dev/challenge/6b7707e8-f3bb-44d1-8b5d-62e01971f4bf"
+      hidelogo
+      hidefooter
+      (click)="captchaDone = true"
+    ></altcha-widget>
+    <p *ngIf="!captchaDone" class="error">Captcha is required</p>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<app-landing-footer></app-landing-footer>

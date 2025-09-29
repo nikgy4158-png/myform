@@ -1,0 +1,28 @@
+<div class="background-color">
+  <div class="section-container">
+    <h3>Basic usage, with different frameworks</h3>
+    <div class="framework-tabs">
+      <button class="vanilla-button" (click)="setCurrentFramework('vanilla')">Vanilla</button>
+      <button class="angular-button" (click)="setCurrentFramework('angular')">Angular</button>
+      <button class="react-button" (click)="setCurrentFramework('react')">React</button>
+    </div>
+
+    <div class="code-examples-container">
+      <div class="fw-nav">
+        <div class="file-tabs">
+          <ng-container *ngFor="let file of currentFrameworkFiles">
+            <button class="file-button" 
+                    (click)="setCurrentFile(file)" 
+                    [ngClass]="{'underline': file === currentFile}">
+              {{ file }}
+            </button>
+          </ng-container>
+        </div>
+      </div>
+
+      <pre><code [innerHTML]="currentCode"></code></pre>
+      <button class="copy-button" (click)="copyToClipboard()">Copy Code</button>
+      <div class="copied" [ngClass]="{'copy-fade': !isCopied}" *ngIf="isCopied"><p>copied!</p></div>
+    </div>
+  </div>
+</div>
